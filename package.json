@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/lbthomsen/notes/issues"
   },
-  "homepage": "https://github.com/lbthomsen/notes#readme"
+  "homepage": "https://github.com/lbthomsen/notes#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
