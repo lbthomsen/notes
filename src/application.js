@@ -3,7 +3,11 @@
  */
 (function() {
 
-    var app = angular.module("notes", []);
+    var app = angular.module("notes", [
+        "ngRoute", 
+        "home-route", 
+        "about-route"
+    ]);
 
     app.run(["$log", 
         function($log) {

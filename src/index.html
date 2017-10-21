@@ -7,24 +7,36 @@
     </head>
     <body ng-controller="BodyController as bodyCtrl">
         <header class="mb-3">
-            <nav class="navbar navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">Notes</a>
+            <nav class="navbar navbar-dark bg-primary navbar-expand-md">
+                <a class="navbar-brand" href="#!">Notes</a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#headerbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="headerbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!about">About</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
         <div class="container-fluid">
-            <p>
-                Hello World!
-            </p>
-            <p>
-                Angular is version {{bodyCtrl.angularVersion}}
-            </p>
+            <section ng-view/>
         </div>
 
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+
+        <script type="text/javascript" src="routes/home.route.js"></script>
+        <script type="text/javascript" src="routes/about.route.js"></script>
+
         <script type="text/javascript" src="application.js"></script>
 
     </body>
