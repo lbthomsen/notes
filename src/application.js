@@ -25,6 +25,15 @@
         }
     ]);
 
+    app.config(['$locationProvider', 
+        function ($locationProvider) {
+            $locationProvider.html5Mode({
+                enabled: true,
+                requireBase: true
+            });
+        }
+    ]);
+
 })();
 /*
  * vim: ts=4 et nowrap autoindent
