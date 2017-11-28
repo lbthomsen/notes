@@ -5,6 +5,7 @@
 
     var app = angular.module("notes", [
         "ngRoute", 
+        "app-header", 
         "home-route", 
         "about-route"
     ]);
